@@ -1,0 +1,84 @@
+<view class="container">
+
+<!--第一个气泡：标题气泡-->
+<view class="title_bubble">
+  <view class="bubble_text">
+    <text class="text1">PCB瑕疵产品识别系统</text>
+    <text class="text2">实时记录，远程控制</text>
+  </view>
+  <image class="bubble-icon" src="/image/YOLO2.png"></image>
+</view>
+
+ <!--后几个气泡的容器-->
+  <view class="bubble-group-container">
+      <!--气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/pcb.webp" />
+      <view class="data-text">
+        <view class="data-title">缺陷产品数量</view>
+        <view class="data-value">{{DefectTotalCount}}个</view>
+      </view>
+    </view>
+
+      <!--气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/pcb.webp" />
+      <view class="data-text">
+        <view class="data-title">开路</view>
+        <view class="data-value">{{OpenCircuit}}个</view>
+      </view>
+    </view>
+
+       <!--气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/pcb.webp" />  
+      <view class="data-text">
+        <view class="data-title">短路</view>
+        <view class="data-value">{{Short}}个</view>
+      </view>      
+    </view>     
+        <!--气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/pcb.webp" />  
+      <view class="data-text">
+        <view class="data-title">毛刺</view>
+        <view class="data-value">{{Spur}}个</view>
+      </view>      
+    </view>     
+
+        <!--气泡-->
+    <view class="function-bubble">
+      <image class="icon" src="/image/2.png" />
+      <view class="data-text">
+        <view class="data-title">电机控制</view>
+      </view>
+      <switch class="toggle-switch" bindchange="Onenet_SetMotorInfo"/>
+    </view>
+  </view>
+
+ <!-- ========== 新增：历史记录区域（可折叠） ========== -->
+ <view class="records-container">
+    <!-- 折叠按钮 -->
+    <view class="records-header" bindtap="toggleRecords">
+      <text class="records-title">📋 检测记录（最近{{records.length}}条）</text>
+      <text class="toggle-icon">{{showRecords ? '▲ 收起' : '▼ 展开'}}</text>
+    </view>
+    <!-- 记录列表，仅在展开时显示 -->
+    <view wx:if="{{showRecords}}" class="records-list">
+      <!-- 若无记录则显示提示 -->
+      <view wx:if="{{records.length === 0}}" class="record-empty">暂无记录，等待数据更新……</view>
+      <!-- 循环显示每一条记录 -->
+      <view wx:for="{{records}}" wx:key="index" class="record-item">
+        <view class="record-time">🕒 {{item.time}}</view>
+        <view class="record-data">
+          <text>缺陷总数: {{item.DefectTotalCount}}个</text>
+          <text>开路: {{item.OpenCircuit}}个</text>
+          <text>短路: {{item.Short}}个</text>
+          <text>毛刺: {{item.Spur}}个</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

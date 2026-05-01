@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>                               识别监测                               </string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-20</y>
+       <width>1051</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/bkg.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="statusLabel">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>440</y>
+       <width>471</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(238, 238, 236,0.5);</string>
+     </property>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="inferButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>221</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+	font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(114, 159, 207);
+ }
+ QPushButton:pressed {
+font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(32, 74, 135);
+ }</string>
+     </property>
+     <property name="text">
+      <string>识别</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>471</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="videoLabel">
+        <property name="text">
+         <string>实时视频</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="saveButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>270</y>
+       <width>221</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+	font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(114, 159, 207);
+ }
+ QPushButton:pressed {
+font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(32, 74, 135);
+ }</string>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stopButton">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>320</y>
+       <width>221</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+	font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(114, 159, 207);
+ }
+ QPushButton:pressed {
+font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(32, 74, 135);
+ }</string>
+     </property>
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>170</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 italic 17pt &quot;URW Bookman&quot;;
+font: 500 15pt &quot;Ubuntu&quot;;</string>
+     </property>
+     <property name="text">
+      <string>瑕疵预警</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="autosaveCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>90</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 600 italic 17pt &quot;URW Bookman&quot;;
+font: 500 15pt &quot;Ubuntu&quot;;</string>
+     </property>
+     <property name="text">
+      <string>瑕疵保存</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>                                  检测记录                                </string>
+    </attribute>
+    <widget class="QListWidget" name="imageListWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>491</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget::verticalScrollBar {
+    width: 60px; /* 设置垂直滚动条宽度 */
+}
+
+QListWidget::horizontalScrollBar {
+    height: 60px; /* 设置水平滚动条高度 */
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="previewLabel">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>130</y>
+       <width>491</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>预览图片</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deleteButton">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>40</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton {
+	font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(114, 159, 207);
+ }
+ QPushButton:pressed {
+font: 700 17pt &quot;Ubuntu&quot;;
+	background-color: rgb(32, 74, 135);
+ }</string>
+     </property>
+     <property name="text">
+      <string>删除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>40</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/logo2.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
