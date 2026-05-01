@@ -4,7 +4,8 @@
 <img width="640" height="280" alt="1fd25df19b6b8ad09184025a7915dced_720" src="https://github.com/user-attachments/assets/3037b680-4c8d-4b73-9f01-fb91fe236482" />
 
 2、效果演示
-<img width="640" height="280" alt="1b24f9aa6789b0994d302aa4dd5fd379_720" src="https://github.com/user-attachments/assets/21513043-ab96-464a-bcbe-b2100a35c93b" />
+<img width="640" height="280" alt="a77666019f4f0a6c5c426bfff2c7901d" src="https://github.com/user-attachments/assets/bd8487a1-f221-4f7e-97a2-d7ca37984ef5" />
+
 
 <img width="220" height="470" alt="image" src="https://github.com/user-attachments/assets/9a78faba-cbdd-4811-ab9a-023127c94c20" />
 
