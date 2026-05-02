@@ -7,7 +7,8 @@
 <img width="640" height="280" alt="a77666019f4f0a6c5c426bfff2c7901d" src="https://github.com/user-attachments/assets/bd8487a1-f221-4f7e-97a2-d7ca37984ef5" />
 
 
-<img width="220" height="470" alt="image" src="https://github.com/user-attachments/assets/9a78faba-cbdd-4811-ab9a-023127c94c20" />
+<img width="300" height="500" alt="229362d045f348fcddcb113ad39322e1_720" src="https://github.com/user-attachments/assets/ceef0f31-0543-481c-bec7-96fcfaca8241" />
+
 
 3、介绍
 
