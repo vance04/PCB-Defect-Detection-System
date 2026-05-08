@@ -1,5 +1,3 @@
-本科生毕业设计
-
 1、实物全貌
 <img width="640" height="280" alt="1fd25df19b6b8ad09184025a7915dced_720" src="https://github.com/user-attachments/assets/3037b680-4c8d-4b73-9f01-fb91fe236482" />
 
